@@ -203,30 +203,32 @@ div[data-testid="stMetricValue"] {
         gap: 12px;
         margin: 10px 0 16px;
     }
-    .route-card{
-    background:linear-gradient(135deg,#1f2937,#111827);
-    border:1px solid #374151;
-    border-radius:14px;
-    padding:18px;
-    box-shadow:0 6px 18px rgba(0,0,0,.30);
+    .route-card {
+    background: #ffffff;
+    border: 1px solid #d9d9d9;
+    border-radius: 14px;
+    padding: 18px;
+    min-height: 130px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
 }
-    .route-card strong {
-        color: #18261f;
-        display: block;
-        font-size: 0.9rem;
-        margin-bottom: 6px;
-    }
+   .route-card strong {
+    color: #000000;
+    display: block;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
     .route-card span {
-        color: #18261f;
-        font-size: 1.45rem;
-        font-weight: 800;
-    }
+    color: #000000;
+    font-size: 36px;
+    font-weight: 800;
+}
     .route-card p {
-        color: #5c6a62;
-        margin: 6px 0 0;
-        font-size: 0.86rem;
-        line-height: 1.32;
-    }
+    color: #555555;
+    margin-top: 12px;
+    font-size: 15px;
+    line-height: 1.5;
+}
     .pipeline-flow {
         display: grid;
         grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -240,17 +242,13 @@ div[data-testid="stMetricValue"] {
     border-radius:12px;
     padding:16px;
 }
-    .pipeline-step b {
-        color: #18261f;
-        display: block;
-        font-size: 0.92rem;
-    }
-    .pipeline-step small {
-        color: #5c6a62;
-        display: block;
-        margin-top: 5px;
-        line-height: 1.25;
-    }
+   .pipeline-step small {
+    color:#555555;
+    display:block;
+    margin-top:10px;
+    line-height:1.5;
+    font-size:15px;
+}
     @media (max-width: 1100px) {
         .kpi-grid, .pipeline-flow {
             grid-template-columns: repeat(2, minmax(0, 1fr));
