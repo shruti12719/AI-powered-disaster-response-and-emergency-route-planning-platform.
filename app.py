@@ -112,14 +112,12 @@ st.markdown(
         letter-spacing: 0 !important;
         color: var(--ink);
     }
-    .rr-hero {
-        background: linear-gradient(120deg, #0e1a17 0%, #16342c 55%, #24746b 100%);
-        border-radius: 14px;
-        padding: 22px 26px;
-        margin-bottom: 14px;
-        color: #f4f7f2;
-        box-shadow: 0 6px 18px rgba(14, 26, 23, 0.28);
-    }
+   .rr-hero{
+    background:linear-gradient(135deg,#0f172a,#1d4ed8,#0891b2);
+    border-radius:18px;
+    padding:28px;
+    box-shadow:0 8px 24px rgba(0,0,0,.35);
+}
     .rr-hero h1 {
         color: #ffffff;
         font-size: 2.1rem;
@@ -140,20 +138,32 @@ st.markdown(
         margin: 4px 0 16px;
         color: #5c2d1d;
         font-size: 0.94rem;
-    }
-    div[data-testid="stMetric"] {
-        background: #ffffff;
-        border: 1px solid #cbd6ce;
-        border-radius: 8px;
-        padding: 12px 14px;
-    }
-    div[data-testid="stMetricLabel"] p {
-        color: #33423b;
-        font-size: 0.8rem;
-    }
-    div[data-testid="stMetricValue"] {
-        color: #14211b;
-    }
+    }div[data-testid="stMetric"] {
+    background: linear-gradient(135deg, #1f2937, #111827);
+    border: 1px solid #374151;
+    border-radius: 14px;
+    padding: 18px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.35);
+    transition: all 0.3s ease;
+}
+
+div[data-testid="stMetric"]:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.45);
+}
+
+div[data-testid="stMetricLabel"] p {
+    color: #f3f4f6 !important;
+    font-size: 1rem !important;
+    font-weight: 600 !important;
+}
+
+div[data-testid="stMetricValue"] {
+    color: #ffffff !important;
+    font-size: 2rem !important;
+    font-weight: 700 !important;
+}
+    
     .kpi-grid {
         display: grid;
         grid-template-columns: repeat(6, minmax(0, 1fr));
@@ -161,28 +171,25 @@ st.markdown(
         margin: 16px 0 18px;
     }
     .kpi-card {
-        min-height: 112px;
-        background: #ffffff;
-        border: 1px solid #cbd6ce;
-        border-top: 5px solid var(--accent-2);
-        border-radius: 8px;
-        padding: 12px 12px 10px;
-        box-shadow: 0 1px 2px rgba(27, 39, 34, 0.08);
-    }
-    .kpi-title {
-        color: #31423b;
-        font-size: 0.76rem;
-        line-height: 1.15;
-        text-transform: uppercase;
-        font-weight: 700;
-    }
-    .kpi-value {
-        color: #13211b;
-        font-size: 1.72rem;
-        line-height: 1.2;
-        font-weight: 800;
-        margin-top: 5px;
-    }
+    min-height: 120px;
+    background: linear-gradient(135deg,#1e293b,#111827);
+    border: 1px solid #374151;
+    border-left: 5px solid #06b6d4;
+    border-radius: 14px;
+    padding: 18px;
+    box-shadow: 0 6px 18px rgba(0,0,0,.30);
+}
+.kpi-title{
+    color:#d1d5db;
+    font-size:.9rem;
+    font-weight:700;
+    text-transform:uppercase;
+}
+   .kpi-value{
+    color:white;
+    font-size:2rem;
+    font-weight:800;
+}
     .kpi-help {
         color: #5c6a62;
         font-size: 0.78rem;
@@ -195,13 +202,13 @@ st.markdown(
         gap: 12px;
         margin: 10px 0 16px;
     }
-    .route-card {
-        background: #ffffff;
-        border: 1px solid #cbd6ce;
-        border-radius: 8px;
-        padding: 14px;
-        min-height: 124px;
-    }
+    .route-card{
+    background:linear-gradient(135deg,#1f2937,#111827);
+    border:1px solid #374151;
+    border-radius:14px;
+    padding:18px;
+    box-shadow:0 6px 18px rgba(0,0,0,.30);
+}
     .route-card strong {
         color: #18261f;
         display: block;
@@ -225,14 +232,13 @@ st.markdown(
         gap: 10px;
         margin-top: 12px;
     }
-    .pipeline-step {
-        background: #ffffff;
-        border: 1px solid #cbd6ce;
-        border-left: 5px solid #dd563b;
-        border-radius: 8px;
-        padding: 12px;
-        min-height: 86px;
-    }
+    .pipeline-step{
+    background:#1f2937;
+    border:1px solid #374151;
+    border-left:5px solid #10b981;
+    border-radius:12px;
+    padding:16px;
+}
     .pipeline-step b {
         color: #18261f;
         display: block;
@@ -260,14 +266,13 @@ st.markdown(
         font-size: 0.9rem;
         margin-top: -0.5rem;
     }
-    .rr-status {
-        padding: 10px 12px;
-        border: 1px solid var(--line);
-        border-radius: 8px;
-        background: #fbfcf8;
-        color: var(--ink);
-        font-size: 0.92rem;
-    }
+    .rr-status{
+    background:#111827;
+    color:white;
+    border:1px solid #374151;
+    border-radius:12px;
+    padding:14px;
+}
     </style>
     """,
     unsafe_allow_html=True,
