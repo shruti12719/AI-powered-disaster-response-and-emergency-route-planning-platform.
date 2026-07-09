@@ -138,30 +138,31 @@ st.markdown(
         margin: 4px 0 16px;
         color: #5c2d1d;
         font-size: 0.94rem;
-    }div[data-testid="stMetric"] {
-    background: linear-gradient(135deg, #1f2937, #111827);
-    border: 1px solid #374151;
+    }
+    div[data-testid="stMetric"] {
+    background: white;
+    border: 1px solid #e5e7eb;
     border-radius: 14px;
     padding: 18px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.35);
-    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,.08);
 }
 
 div[data-testid="stMetric"]:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.45);
+    box-shadow: 0 8px 18px rgba(0,0,0,.15);
+    transform: translateY(-2px);
+    transition: .2s ease;
 }
 
 div[data-testid="stMetricLabel"] p {
-    color: #f3f4f6 !important;
-    font-size: 1rem !important;
-    font-weight: 600 !important;
+    color: #111827 !important;
+    font-size: 16px !important;
+    font-weight: 700 !important;
 }
 
 div[data-testid="stMetricValue"] {
-    color: #ffffff !important;
-    font-size: 2rem !important;
-    font-weight: 700 !important;
+    color: #111827 !important;
+    font-size: 34px !important;
+    font-weight: 800 !important;
 }
     
     .kpi-grid {
