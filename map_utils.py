@@ -3,7 +3,7 @@ from __future__ import annotations
 import folium
 import networkx as nx
 
-from .icons import icon_for, label_for
+from icons import icon_for, label_for
 
 TILE_OPTIONS: dict[str, dict[str, str | None]] = {
     "OpenStreetMap": {"tiles": "OpenStreetMap", "attr": None},
